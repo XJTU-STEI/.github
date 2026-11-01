@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/logo.png" alt="西安交通大学电信学部学生科技协会图标" width="32" height="32" />
+  <img src="./assets/logo.png" alt="西安交通大学电信学部学生科技协会图标" width="128" height="128" />
 
   <h1>西安交通大学电信学部学生科技协会</h1>
 
