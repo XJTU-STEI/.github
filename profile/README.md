@@ -1,12 +1,13 @@
-## Hi there 👋
+<div align="center">
+  <img src="./assets/logo.png" alt="西安交通大学电信学部学生科技协会图标" width="32" height="32" />
 
-<!--
+  <h1>西安交通大学电信学部学生科技协会</h1>
 
-**Here are some ideas to get you started:**
+  <p>西安交通大学电信学部学生科技协会官方 GitHub 组织</p>
+</div>
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## Welcome 👋
+
+欢迎来到西安交通大学电信学部学生科技协会官方 GitHub 组织！
+
+欢迎浏览我们的项目，通过 Issue 交流想法，或提交 Pull Request 参与贡献。期待与你一起交流技术、探索创意、分享成果。
