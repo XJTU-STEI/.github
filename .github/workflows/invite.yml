@@ -1,0 +1,37 @@
+name: Invite Organization Member
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  issues: write
+
+jobs:
+  invite:
+    if: github.event.label.name == 'invite-to-org'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send organization invitation
+        env:
+          GH_TOKEN: ${{ secrets.ORG_INVITE_TOKEN }}
+          ORG: ${{ github.repository_owner }}
+          USER_ID: ${{ github.event.issue.user.id }}
+        run: |
+          gh api --method POST \
+            "/orgs/$ORG/invitations" \
+            -F "invitee_id=$USER_ID" \
+            -f "role=direct_member"
+
+      - name: Comment and close issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh issue comment "$ISSUE" \
+            --repo "$REPO" \
+            --body "审核已通过，组织邀请已发送，请查看 GitHub 通知或邮箱。"
+
+          gh issue close "$ISSUE" --repo "$REPO"
