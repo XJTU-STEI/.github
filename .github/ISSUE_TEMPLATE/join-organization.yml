@@ -1,0 +1,13 @@
+name: 加入组织申请
+description: 申请加入西安交通大学电信学部学生科技协会 GitHub 组织
+title: 申请加入组织
+body:
+  - type: dropdown
+    id: stei-member
+    attributes:
+      label: 是否是电信科协成员？
+      options:
+        - 是
+        - 否
+    validations:
+      required: true
